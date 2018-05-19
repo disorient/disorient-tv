@@ -18,7 +18,7 @@ def play_it(file):
 
 # Get .mov and .mp4 files in folder
 folder = "/home/pi/Documents/disorient-tv/"
-
+ 
 files = os.listdir(folder)
 
 for f in files:
