@@ -12,6 +12,7 @@ from time import sleep
 def play_it(file):
     path = Path(file)
     player = OMXPlayer(path)
+    #player.set_aspect_mode("stretch")
     sleep(player.duration())
 
 play_it("/home/pi/Documents/disorient-tv/DTV-Pornj-Walk-With-Me.mov")
