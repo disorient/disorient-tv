@@ -12,10 +12,15 @@ from time import sleep
 from random import shuffle
 
 def play_it(file):
-    path = Path(file)
-    player = OMXPlayer(path)
-    sleep(player.duration())
-    player.quit()
+    try:
+        path = Path(file)
+        player = OMXPlayer(path)
+        sleep(player.duration())
+        player.quit()
+        sleep(1)
+    except:
+        print('oops all berries')
+        sleep(1)
 
 # Clear screen
 os.system('clear')
