@@ -16,6 +16,7 @@ def create_playlist_generator(playlist):
     '''Create a shuffled playlist generator'''
 
     L = playlist
+    shuffle(L)
     index = 0
 
     while True:
